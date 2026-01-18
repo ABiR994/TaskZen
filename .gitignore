@@ -1,0 +1,65 @@
+# Node.js
+node_modules/
+/build
+/dist
+.npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-store/
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+*.log
+*.tgz
+
+# editor directories and files
+.idea
+.vscode
+*.sublime-project
+*.sublime-workspace
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+*~
+*.swp
+*.bak
+*.swo
+*.tmp
+temp/
+.tmp/
+
+# Crashlytics
+com.crashlytics.sdk.android.*
+
+# Optional: React Native (if applicable, though this is a web app)
+.react-native/local-cli/core/tmp
+.packager/
+
+# Misc
+.yarn/cache
+.yarn/build-state.yml
+.yarn/install-state.yml
+.yarn/unplugged
+.pnp.*
+.env.*
+.eslintcache

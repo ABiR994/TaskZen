@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Layer 1: Directive
+ * Goal: Establish global styles, including font definitions and base theme.
+ * Inputs: Tailwind CSS directives.
+ * Edge Cases: Font loading failures (will fall back to system defaults).
+ * Outputs: Base styling for the application.
+ */
+
+/* Layer 2: Orchestration
+ * This file serves as the main entry point for global styles.
+ * It imports Tailwind's base, components, and utility layers.
+ * Custom fonts (like Poppins or Inter) would be defined here if a CDN or local import was used.
+ * For now, we'll rely on Tailwind's defaults and ensure dark mode styling is correctly handled.
+ */
+
+/* Layer 3: Execution
+ * These are the standard Tailwind CSS imports.
+ * The 'dark' class will be dynamically added/removed from the <html> element by App.js
+ * to enable dark mode styling, leveraging Tailwind's dark mode variant capabilities.
+ */
+html {
+  font-family: 'Inter', sans-serif; /* Placeholder for Inter, to be imported if needed */
+}
+
+/* Fallback for Poppins/Inter, for now using a generic sans-serif */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
