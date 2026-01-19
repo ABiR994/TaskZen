@@ -23,6 +23,19 @@
  */
 html {
   font-family: 'Inter', sans-serif; /* Placeholder for Inter, to be imported if needed */
+  /* Mobile-first: default font size */
+  font-size: 14px; /* Smaller base font size for very small screens */
+}
+
+@media (min-width: 640px) { /* Tailwind's 'sm' breakpoint */
+  html {
+    font-size: 16px; /* Revert to standard font size for larger screens */
+  }
+}
+
+body {
+  overflow-x: hidden; /* Prevent horizontal scrolling on mobile */
+  scroll-behavior: smooth; /* Smooth scrolling for better UX */
 }
 
 /* Fallback for Poppins/Inter, for now using a generic sans-serif */

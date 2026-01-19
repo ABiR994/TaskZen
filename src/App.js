@@ -101,7 +101,12 @@ function App() {
         ? 'bg-gradient-to-br from-background-dark to-gray-900 text-text-dark'
         : 'bg-gradient-to-br from-white to-blue-50 text-gray-800'
       }`}>
-      <header className="container mx-auto p-4 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+       <header className="container mx-auto p-2 sm:p-4 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+        {/* Responsive adjustments:
+            - `p-2 sm:p-4`: Smaller padding on extra-small screens, scales up on 'sm' breakpoint and above.
+            - `flex-col sm:flex-row`: Stacks items vertically by default on mobile, switches to horizontal on 'sm' and above.
+            - `space-y-4 sm:space-y-0`: Adds vertical space between elements on mobile, removes it on 'sm' and above.
+        */}
         <div className="flex items-center space-x-2">
           {/* Logo Integration */}
           <img src={process.env.PUBLIC_URL + '/logo.svg'} alt="TaskZen Logo" className="h-8 w-8" />
@@ -125,7 +130,13 @@ function App() {
           </button>
         </div>
       </header>
-      <main className="container mx-auto p-4 max-w-2xl md:max-w-3xl lg:max-w-4xl">
+       <main className="container mx-auto px-2 py-4 sm:p-4 max-w-2xl md:max-w-3xl lg:max-w-4xl">
+        {/* Responsive adjustments:
+            - `px-2 py-4 sm:p-4`: Tighter horizontal padding on extra-small screens (`px-2`),
+                                   more vertical padding (`py-4`), scales to uniform `p-4` on 'sm' and above.
+            - `max-w-*`: Ensures content does not stretch too wide on very large screens,
+                         but allows full width on smaller screens within the `px-2` padding.
+        */}
         <TaskForm addTask={addTask} existingCategories={existingCategories} />
         <h2 className="text-2xl font-semibold mb-4 mt-8">Your Tasks</h2>
         <TaskList

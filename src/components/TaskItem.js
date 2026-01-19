@@ -81,8 +81,19 @@ function TaskItem({ task, toggleComplete, deleteTask, editTask }) {
         }
         transition-all duration-300 ease-in-out hover:shadow-md dark:hover:shadow-lg-dark transform hover:-translate-y-0.5`}
     >
+      {/* Responsive adjustments for TaskItem container:
+          - `flex-col sm:flex-row`: Stacks main content and action buttons vertically on mobile,
+                                    switches to horizontal on 'sm' breakpoint and above.
+          - `items-start sm:items-center`: Aligns items to start on mobile, centers them vertically on 'sm' and above.
+          - `p-4`: Provides consistent padding around the task item.
+      */}
       {isEditing ? (
-        <div className="flex-grow grid grid-cols-1 md:grid-cols-2 gap-2 sm:mr-4 w-full">
+            <div className="flex-grow grid grid-cols-1 md:grid-cols-2 gap-2 sm:mr-4 w-full">
+              {/* Responsive adjustments for edit mode inputs:
+                  - `grid grid-cols-1 md:grid-cols-2`: Stacks input fields vertically on mobile,
+                                                        switches to two columns on 'md' breakpoint and above.
+                  - `w-full`: Ensures inputs take full width on mobile.
+              */}
           <input
             type="text"
             value={editedText}
@@ -125,7 +136,12 @@ function TaskItem({ task, toggleComplete, deleteTask, editTask }) {
               {task.text}
             </span>
           </label>
-          <div className="flex flex-col sm:flex-row items-start sm:items-center text-sm mt-1 sm:mt-0 sm:space-x-2 space-y-1 sm:space-y-0 ml-9">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center text-sm mt-1 sm:mt-0 sm:space-x-2 space-y-1 sm:space-y-0 pl-10 sm:ml-9">
+              {/* Responsive adjustments for category and priority display:
+                  - `flex-col sm:flex-row`: Stacks category/priority vertically on mobile, horizontally on 'sm' and above.
+                  - `pl-10 sm:ml-9`: Adjusted left padding for alignment with checkbox on mobile,
+                                     reverts to original margin-left on 'sm' and above.
+              */}
             {task.category && (
               <span className="px-2 py-0.5 rounded-full bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-300 text-xs">
                 {task.category}

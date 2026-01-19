@@ -61,6 +61,11 @@ function TaskForm({ addTask, existingCategories }) {
 
   return (
     <form onSubmit={handleSubmit} className="mb-8 p-4 sm:p-6 rounded-lg shadow-lg bg-background-light dark:bg-background-dark transition-colors duration-300">
+      {/* Responsive adjustments for form container:
+          - `p-4 sm:p-6`: Base padding for mobile, increases on 'sm' breakpoint.
+          - `w-full`: Inputs take full width on all screen sizes, ensuring good touch targets and readability.
+          - `text-lg sm:text-xl`, `text-base`: Font sizes scale appropriately.
+      */}
       <div className="mb-4">
         <input
           type="text"
@@ -78,6 +83,11 @@ function TaskForm({ addTask, existingCategories }) {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+        {/* Responsive adjustments for category and priority fields:
+            - `grid grid-cols-1 md:grid-cols-2`: Stacks items vertically on mobile (`col-span-1`),
+                                                switches to two columns on 'md' breakpoint and above.
+            - `w-full`: Ensures inputs take full width on mobile.
+        */}
         <div>
           <label htmlFor="category-input" className="block text-sm font-medium mb-1 text-text-light dark:text-text-dark">Category (optional)</label>
           <input
@@ -128,6 +138,11 @@ function TaskForm({ addTask, existingCategories }) {
                    focus:ring-offset-2 dark:focus:ring-offset-background-dark
                    transition-all duration-300 transform hover:scale-105 shadow-md"
       >
+        {/* Responsive adjustment for Add Task button:
+            - `w-full md:w-auto`: Button takes full width on mobile for easy touch,
+                                    resizes to auto width on 'md' breakpoint and above.
+            - `px-8 py-3`: Generous padding ensures a large, comfortable touch target.
+        */}
         Add Task
       </button>
     </form>
