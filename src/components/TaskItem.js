@@ -25,8 +25,8 @@ import React, { useState } from 'react';
 
 // Layer 2: Orchestration - Define priority colors using the new palette
 const priorityColors = {
-  low: 'bg-accent-light text-text dark:bg-accent-dark dark:text-text-dark',
-  medium: 'bg-primary-light text-text dark:bg-primary-dark dark:text-text-dark',
+  low: 'bg-accent-light text-text-light dark:bg-accent-dark dark:text-text-dark',
+  medium: 'bg-primary-light text-text-light dark:bg-primary-dark dark:text-text-dark',
   high: 'bg-red-300 text-red-800 dark:bg-red-700 dark:text-red-200',
 };
 
@@ -77,7 +77,7 @@ function TaskItem({ task, toggleComplete, deleteTask, editTask }) {
       className={`flex flex-col sm:flex-row items-start sm:items-center justify-between p-4 rounded-lg shadow-sm
         ${task.completed
           ? 'bg-completed-light dark:bg-completed-dark opacity-70'
-          : 'bg-background dark:bg-background-dark'
+          : 'bg-background-light dark:bg-gray-800'
         }
         transition-all duration-300 ease-in-out hover:shadow-md dark:hover:shadow-lg-dark transform hover:-translate-y-0.5`}
     >
@@ -98,14 +98,14 @@ function TaskItem({ task, toggleComplete, deleteTask, editTask }) {
             type="text"
             value={editedText}
             onChange={(e) => setEditedText(e.target.value)}
-            className="w-full p-2 text-base border-2 border-primary-light dark:border-primary-dark rounded-md focus:ring-1 focus:ring-primary bg-gray-50 dark:bg-gray-700 text-text dark:text-text-dark"
+            className="w-full p-2 text-base border-2 border-primary-light dark:border-primary-dark rounded-md focus:ring-1 focus:ring-primary bg-gray-50 dark:bg-gray-700 text-text-light dark:text-text-dark"
           />
           <input
             type="text"
             placeholder="Category"
             value={editedCategory}
             onChange={(e) => setEditedCategory(e.target.value)}
-            className="w-full p-2 text-base border-2 border-primary-light dark:border-primary-dark rounded-md focus:ring-1 focus:ring-primary bg-gray-50 dark:bg-gray-700 text-text dark:text-text-dark"
+            className="w-full p-2 text-base border-2 border-primary-light dark:border-primary-dark rounded-md focus:ring-1 focus:ring-primary bg-gray-50 dark:bg-gray-700 text-text-light dark:text-text-dark"
           />
           <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2 col-span-full mt-2">
             {['low', 'medium', 'high'].map((p) => (
@@ -118,7 +118,7 @@ function TaskItem({ task, toggleComplete, deleteTask, editTask }) {
                   onChange={() => setEditedPriority(p)}
                   className="form-radio h-5 w-5 text-primary dark:text-primary-light focus:ring-primary-light"
                 />
-                <span className="ml-2 capitalize text-text dark:text-text-dark">{p}</span>
+                <span className="ml-2 capitalize text-text-light dark:text-text-dark">{p}</span>
               </label>
             ))}
           </div>
@@ -132,7 +132,7 @@ function TaskItem({ task, toggleComplete, deleteTask, editTask }) {
               onChange={() => toggleComplete(task.id)}
               className="form-checkbox h-6 w-6 text-primary dark:text-primary-light rounded focus:ring-primary-light transition-all duration-300 transform scale-100 hover:scale-110"
             />
-            <span className={`ml-3 text-lg sm:text-xl ${task.completed ? 'text-gray-600 dark:text-gray-400 line-through' : 'text-text dark:text-text-dark'}`}>
+            <span className={`ml-3 text-lg sm:text-xl ${task.completed ? 'text-gray-600 dark:text-gray-400 line-through' : 'text-text-light dark:text-text-dark'}`}>
               {task.text}
             </span>
           </label>

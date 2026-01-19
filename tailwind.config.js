@@ -7,27 +7,21 @@ module.exports = {
     extend: {
       colors: {
         'primary': {
-          DEFAULT: '#0A7D9D', // Vibrant Teal
-          light: '#E0F7FA',   // Very light Teal
-          dark: '#005F73',    // Darker Teal for dark mode primary interactions
+          DEFAULT: '#00b4d8', // Deeper, richer Teal
+          light: '#90e0ef', // Softer, pastel Teal
+          dark: '#529197',
         },
         'accent': {
-          DEFAULT: '#4CAF50', // Brighter Green
-          light: '#E8F5E9',   // Very light Green
-          dark: '#388E3C',    // Darker Green for dark mode accent interactions
+          DEFAULT: '#66cc66', // Slightly deeper green
+          light: '#99e699', // More vibrant light green
+          dark: '#8ebc8e',
         },
-        'background': { // Default background (light mode)
-          DEFAULT: '#F9FAFB', // Subtle light gray
-          dark: '#1A202C',    // Dark mode background (darker, professional charcoal)
-        },
-        'text': {       // Default text (light mode)
-          DEFAULT: '#374151', // Richer dark gray
-          dark: '#E2E8F0',    // Dark mode text (light gray)
-        },
-        'completed': {  // Default completed state (light mode)
-          light: '#EBF4F6',   // Subtle light blue-gray
-          dark: '#4A5568',    // Dark mode completed state (medium dark gray)
-        },
+        'background-light': '#fefefe', // Warmer off-white
+        'background-dark': '#1f2937',
+        'text-light': '#212529', // Softer dark gray
+        'text-dark': '#e2e8f0',
+        'completed-light': '#e0f2f7', // Lighter, hint of primary for completed tasks
+        'completed-dark': '#4a5568', // Darker gray for completed tasks
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'], // Ensure Inter is default sans-serif
