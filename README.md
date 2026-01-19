@@ -1,33 +1,52 @@
-# TaskZen: Focus-Driven To-Do App
+# 🧘‍♂️ TaskZen: Focus-Driven To-Do App
 
 ![TaskZen Logo](https://ABiR994.github.io/TaskZen/logo.svg)
 
-## Live Demo
-Experience TaskZen live on GitHub Pages: [https://ABiR994.github.io/TaskZen](https://ABiR994.github.io/TaskZen)
+> **Clarity. Calm. Completion.**  
+> A minimalist to-do app designed to reduce cognitive load and boost productivity—without the noise.
 
-## Description
-TaskZen is a modern, minimalistic to-do application built with React and Tailwind CSS. It's designed to help users manage tasks with a focus on productivity and mental calm, offering a premium and intuitive user experience.
-
----
-
-## Features
-- **Task Management**: Add, edit, delete, and mark tasks as complete.
-- **Categorization & Priority**: Organize tasks with custom categories and priority levels (low, medium, high).
-- **Focus Mode**: Hide completed tasks to concentrate on pending items.
-- **Smart Suggestions**: Get category suggestions based on previous entries.
-- **Dynamic Theming**: Seamless dark and light mode transitions.
-- **Intuitive UI/UX**: Minimalist, responsive design with a calming aesthetic, custom typography, and subtle micro-interactions.
-- **Local Persistence**: All data is saved securely in your browser's local storage.
+[![Live Demo](https://img.shields.io/badge/Live_Demo-GitHub_Pages-181717?style=for-the-badge&logo=github&logoColor=white)](https://ABiR994.github.io/TaskZen)  
+[![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)](https://reactjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
 ---
 
-## Technologies Used
--   **Frontend**: React.js
--   **Styling**: Tailwind CSS
--   **State Management**: React Hooks
--   **Local Persistence**: Browser `localStorage`
+## 🌟 Overview
+
+**TaskZen** is a modern, distraction-free task manager built with **React** and **Tailwind CSS**. It blends thoughtful design with practical functionality to help you stay organized while maintaining mental calm. Whether you're tackling daily chores or managing complex projects, TaskZen keeps your focus where it belongs—on what matters.
+
+All data is stored locally in your browser—no accounts, no tracking, just peace of mind.
 
 ---
+
+## ✨ Features
+
+- **📝 Full Task Control**: Add, edit, delete, and mark tasks as complete.
+- **🏷️ Smart Categorization**: Assign custom categories (e.g., “Work”, “Personal”) and set priority levels (**Low**, **Medium**, **High**).
+- **🧠 Focus Mode**: Instantly hide completed tasks to eliminate visual clutter.
+- **💡 Smart Suggestions**: Automatically suggests categories based on your past entries for faster input.
+- **🌓 Dynamic Theming**: Smooth toggle between **dark** and **light** modes with a single click.
+- **🎨 Thoughtful UI/UX**: Clean, responsive layout with custom typography, subtle animations, and intuitive icons.
+- **💾 Local Persistence**: All tasks are securely saved in your browser’s `localStorage`—your data never leaves your device.
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer               | Technology         |
+|---------------------|--------------------|
+| Frontend            | React.js           |
+| Styling             | Tailwind CSS       |
+| State Management    | React Hooks (`useState`, `useEffect`) |
+| Data Persistence    | Browser `localStorage` |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (v16 or higher recommended)
+- npm or yarn
 
 ## Installation & Local Development
 To run TaskZen locally:
@@ -45,11 +64,15 @@ To run TaskZen locally:
 3.  **Install dependencies:**
     ```bash
     npm install
+    #or
+    yarn install
     ```
 
 4.  **Start the development server:**
     ```bash
     npm start
+    #or
+    yarn start
     ```
     The app will open in your browser at `http://localhost:3000`.
 
@@ -68,3 +91,5 @@ TaskZen provides a straightforward way to manage your tasks:
 
 ## Acknowledgements
 This project was developed using Opencode.
+
+---
