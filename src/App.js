@@ -96,11 +96,7 @@ function App() {
 
   // Layer 3: Execution - Apply new color palette, layout, and responsive styles
   return (
-    <div className={`min-h-screen font-sans transition-colors duration-300
-      ${isDarkMode
-        ? 'bg-gradient-to-br from-background-dark to-gray-900 text-text-dark'
-        : 'bg-gradient-to-br from-white to-blue-50 text-gray-800'
-      }`}>
+    <div className={`min-h-screen font-sans transition-colors duration-300 bg-gradient-to-br from-background to-blue-50 text-text dark:from-background-dark dark:to-gray-900 dark:text-text-dark`}>
        <header className="container mx-auto p-2 sm:p-4 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
         {/* Responsive adjustments:
             - `p-2 sm:p-4`: Smaller padding on extra-small screens, scales up on 'sm' breakpoint and above.
@@ -115,7 +111,7 @@ function App() {
         <div className="flex items-center space-x-2 sm:space-x-4">
           <button
             onClick={toggleDarkMode}
-            className="p-2 rounded-full bg-gray-200 dark:bg-primary-dark hover:brightness-110 transition-all duration-300 transform hover:scale-110"
+            className="p-2 rounded-full bg-primary-light dark:bg-primary hover:brightness-110 transition-all duration-300 transform hover:scale-110"
             aria-label="Toggle dark mode"
           >
             {isDarkMode ? '☀️' : '🌙'}
@@ -123,7 +119,7 @@ function App() {
           <button
             onClick={toggleFocusMode}
             className={`px-4 py-2 rounded-full font-medium transition-all duration-300 transform hover:scale-105
-              ${isFocusMode ? 'bg-accent text-text-light' : 'bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-gray-300'} hover:brightness-110`}
+              ${isFocusMode ? 'bg-accent text-text' : 'bg-gray-300 dark:bg-gray-700 text-text dark:text-text'} hover:brightness-110`}
             aria-label="Toggle focus mode"
           >
             {isFocusMode ? 'Focus On' : 'Focus Off'}
