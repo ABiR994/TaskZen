@@ -99,18 +99,18 @@ function App() {
     <div className={`min-h-screen font-sans transition-colors duration-300
       ${isDarkMode
         ? 'bg-gradient-to-br from-background-dark to-gray-900 text-text-dark'
-        : 'bg-gradient-to-br from-background-light to-blue-50 text-text-light'
+        : 'bg-gradient-to-br from-white to-blue-50 text-gray-800'
       }`}>
-      <header className="container mx-auto p-4 flex flex-col sm:flex-row justify-between items-center sm:items-start space-y-4 sm:space-y-0">
+      <header className="container mx-auto p-4 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
         <div className="flex items-center space-x-2">
           {/* Logo Integration */}
           <img src={process.env.PUBLIC_URL + '/logo.svg'} alt="TaskZen Logo" className="h-8 w-8" />
-          <h1 className="text-3xl font-bold text-primary">TaskZen</h1>
+          <h1 className="text-2xl font-bold text-primary sm:text-3xl">TaskZen</h1>
         </div>
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-2 sm:space-x-4">
           <button
             onClick={toggleDarkMode}
-            className="p-2 rounded-full bg-primary-light dark:bg-primary-dark hover:brightness-110 transition-all duration-300 transform hover:scale-110"
+            className="p-2 rounded-full bg-gray-200 dark:bg-primary-dark hover:brightness-110 transition-all duration-300 transform hover:scale-110"
             aria-label="Toggle dark mode"
           >
             {isDarkMode ? '☀️' : '🌙'}

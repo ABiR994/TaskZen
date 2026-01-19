@@ -121,17 +121,17 @@ function TaskItem({ task, toggleComplete, deleteTask, editTask }) {
               onChange={() => toggleComplete(task.id)}
               className="form-checkbox h-6 w-6 text-primary dark:text-primary-light rounded focus:ring-primary-light transition-all duration-300 transform scale-100 hover:scale-110"
             />
-            <span className={`ml-3 text-lg sm:text-xl ${task.completed ? 'text-gray-500 dark:text-gray-400 line-through' : 'text-text-light dark:text-text-dark'}`}>
+            <span className={`ml-3 text-lg sm:text-xl ${task.completed ? 'text-gray-600 dark:text-gray-400 line-through' : 'text-text-light dark:text-text-dark'}`}>
               {task.text}
             </span>
           </label>
           <div className="flex flex-col sm:flex-row items-start sm:items-center text-sm mt-1 sm:mt-0 sm:space-x-2 space-y-1 sm:space-y-0 ml-9">
             {task.category && (
-              <span className="px-2 py-0.5 rounded-full bg-gray-200 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs">
+              <span className="px-2 py-0.5 rounded-full bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-300 text-xs">
                 {task.category}
               </span>
             )}
-            <span className={`px-2 py-0.5 rounded-full text-xs capitalize ${priorityColors[task.priority]}`}>
+            <span className={`px-2 py-0.5 rounded-full text-xs capitalize ${priorityColors[task.priority]} ${task.priority === 'high' ? 'bg-red-400 text-red-900' : ''}`}>
               {task.priority}
             </span>
           </div>
@@ -150,7 +150,7 @@ function TaskItem({ task, toggleComplete, deleteTask, editTask }) {
             </button>
             <button
               onClick={handleCancelEdit}
-              className="px-4 py-2 bg-gray-400 text-white rounded-md hover:bg-gray-500 transition-all duration-300 transform hover:scale-105 text-sm sm:text-base"
+              className="px-4 py-2 bg-gray-300 text-gray-800 rounded-md hover:bg-gray-400 transition-all duration-300 transform hover:scale-105 text-sm sm:text-base"
               aria-label="Cancel editing"
             >
               Cancel
@@ -167,7 +167,7 @@ function TaskItem({ task, toggleComplete, deleteTask, editTask }) {
             </button>
             <button
               onClick={handleDelete}
-              className="p-2 text-red-500 dark:text-red-400 hover:text-red-700 dark:hover:text-red-300 transition-colors duration-300 transform hover:scale-110"
+              className="p-2 text-red-600 dark:text-red-400 hover:text-red-700 dark:hover:text-red-300 transition-colors duration-300 transform hover:scale-110"
               aria-label="Delete task"
             >
               🗑️

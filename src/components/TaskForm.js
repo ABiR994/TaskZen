@@ -60,7 +60,7 @@ function TaskForm({ addTask, existingCategories }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="mb-8 p-6 rounded-lg shadow-lg bg-background-light dark:bg-background-dark transition-colors duration-300">
+    <form onSubmit={handleSubmit} className="mb-8 p-4 sm:p-6 rounded-lg shadow-lg bg-background-light dark:bg-background-dark transition-colors duration-300">
       <div className="mb-4">
         <input
           type="text"
@@ -103,7 +103,7 @@ function TaskForm({ addTask, existingCategories }) {
 
         <div>
           <label className="block text-sm font-medium mb-1 text-text-light dark:text-text-dark">Priority</label>
-          <div className="flex space-x-4 pt-2 text-base">
+          <div className="flex space-x-2 sm:space-x-4 pt-2 text-base">
             {['low', 'medium', 'high'].map((p) => (
               <label key={p} className="inline-flex items-center cursor-pointer">
                 <input
