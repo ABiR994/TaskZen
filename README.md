@@ -1,10 +1,6 @@
-# TaskZen
-
 ![TaskZen Logo](/public/logo.svg)
 
 ## TaskZen: Focus-Driven To-Do App
-
----
 
 ## Description
 TaskZen is a modern, minimalistic to-do application built with React and Tailwind CSS. It's designed to help users manage tasks with a focus on productivity and mental calm, offering a premium and intuitive user experience.
