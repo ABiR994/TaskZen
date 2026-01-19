@@ -1,6 +1,6 @@
 # TaskZen
 
-![TaskZen Logo](/logo.svg)
+![TaskZen Logo](/public/logo.svg)
 
 ## TaskZen: Focus-Driven To-Do App
 
