@@ -1,6 +1,6 @@
-# TaskZen: Focus-Driven Task Manager
-
 <div align="center">
+
+# TaskZen: Focus-Driven Task Manager
 
 ![TaskZen Logo](https://ABiR994.github.io/TaskZen/logo.svg)
 
