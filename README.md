@@ -48,7 +48,7 @@ All data is stored locally in your browser—no accounts, no tracking, just peac
 - Node.js (v16 or higher recommended)
 - npm or yarn
 
-## Installation & Local Development
+### Installation & Local Development
 To run TaskZen locally:
 
 1.  **Clone the repository:**
