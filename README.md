@@ -1,95 +1,210 @@
-# 🧘‍♂️ TaskZen: Focus-Driven To-Do App
+# TaskZen: Focus-Driven Task Manager
+
+<div align="center">
 
 ![TaskZen Logo](https://ABiR994.github.io/TaskZen/logo.svg)
 
-> **Clarity. Calm. Completion.**  
-> A minimalist to-do app designed to reduce cognitive load and boost productivity—without the noise.
+A modern, feature-rich task management application built with React and TypeScript.
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-GitHub_Pages-181717?style=for-the-badge&logo=github&logoColor=white)](https://ABiR994.github.io/TaskZen)  
-[![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)](https://reactjs.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[Live Demo](https://ABiR994.github.io/TaskZen) | [Report Bug](https://github.com/ABiR994/TaskZen/issues) | [Request Feature](https://github.com/ABiR994/TaskZen/issues)
 
----
-
-## 🌟 Overview
-
-**TaskZen** is a modern, distraction-free task manager built with **React** and **Tailwind CSS**. It blends thoughtful design with practical functionality to help you stay organized while maintaining mental calm. Whether you're tackling daily chores or managing complex projects, TaskZen keeps your focus where it belongs—on what matters.
-
-All data is stored locally in your browser—no accounts, no tracking, just peace of mind.
+</div>
 
 ---
 
-## ✨ Features
+## Overview
 
-- **📝 Full Task Control**: Add, edit, delete, and mark tasks as complete.
-- **🏷️ Smart Categorization**: Assign custom categories (e.g., “Work”, “Personal”) and set priority levels (**Low**, **Medium**, **High**).
-- **🧠 Focus Mode**: Instantly hide completed tasks to eliminate visual clutter.
-- **💡 Smart Suggestions**: Automatically suggests categories based on your past entries for faster input.
-- **🌓 Dynamic Theming**: Smooth toggle between **dark** and **light** modes with a single click.
-- **🎨 Thoughtful UI/UX**: Clean, responsive layout with custom typography, subtle animations, and intuitive icons.
-- **💾 Local Persistence**: All tasks are securely saved in your browser’s `localStorage`—your data never leaves your device.
+TaskZen is a productivity-focused to-do application designed to help you manage tasks with clarity and calm. Built with modern web technologies, it offers a premium user experience with powerful features while maintaining simplicity.
 
 ---
 
-## 🛠️ Tech Stack
+## Features
 
-| Layer               | Technology         |
-|---------------------|--------------------|
-| Frontend            | React.js           |
-| Styling             | Tailwind CSS       |
-| State Management    | React Hooks (`useState`, `useEffect`) |
-| Data Persistence    | Browser `localStorage` |
+### Core Task Management
+- **Create, Edit, Delete Tasks** - Full CRUD operations with inline editing
+- **Priority Levels** - Organize by Low, Medium, or High priority with color coding
+- **Categories** - Group tasks with custom categories and smart autocomplete
+- **Due Dates** - Set deadlines with visual overdue indicators
+- **Tags** - Add multiple tags for flexible organization
+
+### Advanced Features
+- **Subtasks** - Break down tasks into smaller, trackable subtasks with progress indicators
+- **Recurring Tasks** - Set up daily, weekly, monthly, or yearly recurring tasks
+- **Drag & Drop** - Reorder tasks with intuitive drag-and-drop functionality
+- **Search** - Quickly find tasks by text, category, or tags (Ctrl+F)
+- **Multiple Sort Options** - Sort by date, priority, due date, or custom order
+- **Export/Import** - Backup and restore tasks in JSON or CSV format
+
+### User Experience
+- **Dark & Light Mode** - Beautiful themes with smooth transitions
+- **Focus Mode** - Hide completed tasks to concentrate on what matters
+- **Progress Tracking** - Visual progress bar showing completion percentage
+- **Responsive Design** - Works seamlessly on desktop, tablet, and mobile
+- **Local Persistence** - All data saved securely in browser localStorage
+
+### Accessibility
+- **Keyboard Navigation** - Full keyboard support with intuitive shortcuts
+- **Screen Reader Support** - ARIA labels and live announcements
+- **Focus Management** - Proper focus handling for modals and interactions
+- **Skip Links** - Quick navigation for keyboard users
 
 ---
 
-## 🚀 Getting Started
+## Keyboard Shortcuts
+
+| Shortcut | Action |
+|----------|--------|
+| `?` | Show keyboard shortcuts help |
+| `D` | Toggle dark/light mode |
+| `F` | Toggle focus mode |
+| `Ctrl+F` | Focus search input |
+| `Esc` | Clear search / Close modal |
+| `Arrow Keys` | Navigate task list |
+| `J` / `K` | Navigate down/up (Vim-style) |
+| `X` | Toggle task completion |
+| `E` | Edit selected task |
+| `Shift+Delete` | Delete selected task |
+
+---
+
+## Tech Stack
+
+| Category | Technology |
+|----------|------------|
+| **Language** | TypeScript |
+| **Framework** | React 18 |
+| **Styling** | Tailwind CSS 3 |
+| **Drag & Drop** | @dnd-kit |
+| **Build Tool** | Create React App |
+| **Deployment** | GitHub Pages |
+
+---
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── TaskForm.tsx      # Task creation form with all input fields
+│   ├── TaskItem.tsx      # Individual task display with subtasks
+│   └── TaskList.tsx      # Searchable, sortable task list
+├── hooks/
+│   ├── useKeyboardNavigation.ts  # Keyboard navigation logic
+│   ├── useFocusManagement.ts     # Focus and announcements
+│   └── index.ts
+├── types/
+│   └── index.ts          # TypeScript interfaces and types
+├── utils/
+│   ├── localStorage.ts   # Type-safe storage utilities
+│   ├── dateUtils.ts      # Date formatting helpers
+│   └── exportImport.ts   # JSON/CSV export and import
+├── App.tsx               # Main application component
+├── index.tsx             # Application entry point
+└── index.css             # Global styles and Tailwind config
+```
+
+---
+
+## Installation
 
 ### Prerequisites
-- Node.js (v16 or higher recommended)
+- Node.js 16+ 
 - npm or yarn
 
-### Installation & Local Development
-To run TaskZen locally:
+### Setup
 
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/ABiR994/TaskZen.git
-    ```
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/ABiR994/TaskZen.git
+   cd TaskZen
+   ```
 
-2.  **Navigate to the project directory:**
-    ```bash
-    cd TaskZen
-    ```
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-3.  **Install dependencies:**
-    ```bash
-    npm install
-    #or
-    yarn install
-    ```
+3. **Start development server**
+   ```bash
+   npm start
+   ```
+   
+   Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-4.  **Start the development server:**
-    ```bash
-    npm start
-    #or
-    yarn start
-    ```
-    The app will open in your browser at `http://localhost:3000`.
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
 
 ---
 
-## Usage
-TaskZen provides a straightforward way to manage your tasks:
--   **Add Tasks**: Use the input field, optionally adding a category and priority.
--   **Mark Complete**: Click the checkbox next to a task.
--   **Edit Tasks**: Use the pencil icon (✏️) to modify task details.
--   **Delete Tasks**: Use the trash can icon (🗑️) to remove a task.
--   **Toggle Theme**: Switch between dark and light mode using the sun (☀️) or moon (🌙) icon.
--   **Focus Mode**: Activate "Focus On" to hide all completed tasks.
+## Usage Guide
+
+### Creating Tasks
+1. Enter your task in the main input field
+2. Click the input to expand additional options:
+   - Set a category (with autocomplete from existing categories)
+   - Choose priority level (Low, Medium, High)
+   - Set a due date
+   - Add tags (press Enter or comma to add)
+   - Configure recurrence for repeating tasks
+3. Click "Add Task" or press Enter
+
+### Managing Tasks
+- **Complete**: Click the checkbox to toggle completion
+- **Edit**: Hover and click the edit icon, or press `E` when focused
+- **Delete**: Hover and click the delete icon, or press `Shift+Delete`
+- **Reorder**: Drag tasks using the grip handle on the left
+- **Subtasks**: Click the subtask icon to add and manage subtasks
+
+### Organizing Tasks
+- **Search**: Use the search bar or press `Ctrl+F` to find tasks
+- **Sort**: Choose from multiple sort options (date, priority, due date, custom)
+- **Filter**: Enable Focus Mode to hide completed tasks
+
+### Data Management
+- **Export**: Click the export button to download tasks as JSON or CSV
+- **Import**: Upload a previously exported JSON file to restore tasks
+
+---
+
+## Configuration
+
+### Tailwind Theme
+The color palette and theme can be customized in `tailwind.config.js`:
+
+```javascript
+colors: {
+  primary: {
+    DEFAULT: '#00b4d8',
+    light: '#90e0ef',
+    dark: '#0096c7',
+  },
+  accent: {
+    DEFAULT: '#10b981',
+    light: '#6ee7b7',
+    dark: '#059669',
+  },
+}
+```
 
 ---
 
 ## Acknowledgements
-This project was developed using Opencode.
+
+- Built with [React](https://reactjs.org/)
+- Styled with [Tailwind CSS](https://tailwindcss.com/)
+- Drag and drop powered by [@dnd-kit](https://dndkit.com/)
+- Icons from [Heroicons](https://heroicons.com/)
+- Font: [Inter](https://fonts.google.com/specimen/Inter)
+- Developed using [OpenCode](https://opencode.ai/)
 
 ---
+
+<div align="center">
+
+**TaskZen** - Your zen-like task manager
+
+[Live Demo](https://ABiR994.github.io/TaskZen)
+
+</div>
