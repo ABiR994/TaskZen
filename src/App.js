@@ -104,7 +104,7 @@ function App() {
       <header className="container mx-auto p-4 flex flex-col sm:flex-row justify-between items-center sm:items-start space-y-4 sm:space-y-0">
         <div className="flex items-center space-x-2">
           {/* Logo Integration */}
-          <img src="/logo.svg" alt="TaskZen Logo" className="h-8 w-8" />
+          <img src={process.env.PUBLIC_URL + '/logo.svg'} alt="TaskZen Logo" className="h-8 w-8" />
           <h1 className="text-3xl font-bold text-primary">TaskZen</h1>
         </div>
         <div className="flex items-center space-x-4">
