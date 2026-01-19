@@ -25,7 +25,7 @@ import './index.css'; // Import Tailwind CSS
 function App() {
   // Layer 2: Orchestration - State Management
   const [tasks, setTasks] = useState(() => loadItem('tasks', []));
-  const [isDarkMode, setIsDarkMode] = useState(() => loadItem('theme', 'light') === 'dark');
+  const [isDarkMode, setIsDarkMode] = useState(() => loadItem('theme', 'dark') === 'dark');
   const [isFocusMode, setIsFocusMode] = useState(() => loadItem('focusMode', false));
 
   // Layer 2: Orchestration - Apply theme on initial load and set document title
