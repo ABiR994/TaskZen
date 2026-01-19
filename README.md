@@ -12,75 +12,77 @@ A modern, feature-rich task management application built with React and TypeScri
 
 ---
 
-## Overview
+## 🌟 Overview
 
-TaskZen is a productivity-focused to-do application designed to help you manage tasks with clarity and calm. Built with modern web technologies, it offers a premium user experience with powerful features while maintaining simplicity.
+TaskZen is a productivity-focused to-do application designed to help you manage tasks with clarity and calm. Built with modern web technologies, it offers a premium user experience with powerful features—while maintaining simplicity and elegance.
+
+Whether you're tackling daily chores or managing complex projects, TaskZen adapts to your workflow with smart organization, intuitive interactions, and a serene interface that reduces cognitive load.
 
 ---
 
-## Features
+## ✨ Features
 
 ### Core Task Management
-- **Create, Edit, Delete Tasks** - Full CRUD operations with inline editing
-- **Priority Levels** - Organize by Low, Medium, or High priority with color coding
-- **Categories** - Group tasks with custom categories and smart autocomplete
-- **Due Dates** - Set deadlines with visual overdue indicators
-- **Tags** - Add multiple tags for flexible organization
+- **Create, Edit, Delete Tasks** – Full CRUD operations with inline editing  
+- **Priority Levels** – Organize by Low, Medium, or High priority with color coding  
+- **Categories** – Group tasks with custom categories and smart autocomplete  
+- **Due Dates** – Set deadlines with visual overdue indicators  
+- **Tags** – Add multiple tags for flexible organization  
 
 ### Advanced Features
-- **Subtasks** - Break down tasks into smaller, trackable subtasks with progress indicators
-- **Recurring Tasks** - Set up daily, weekly, monthly, or yearly recurring tasks
-- **Drag & Drop** - Reorder tasks with intuitive drag-and-drop functionality
-- **Search** - Quickly find tasks by text, category, or tags (Ctrl+F)
-- **Multiple Sort Options** - Sort by date, priority, due date, or custom order
-- **Export/Import** - Backup and restore tasks in JSON or CSV format
+- **Subtasks** – Break down tasks into smaller, trackable subtasks with progress indicators  
+- **Recurring Tasks** – Set up daily, weekly, monthly, or yearly recurring tasks  
+- **Drag & Drop** – Reorder tasks with intuitive drag-and-drop functionality  
+- **Search** – Quickly find tasks by text, category, or tags (`Ctrl+F`)  
+- **Multiple Sort Options** – Sort by date, priority, due date, or custom order  
+- **Export/Import** – Backup and restore tasks in JSON or CSV format  
 
 ### User Experience
-- **Dark & Light Mode** - Beautiful themes with smooth transitions
-- **Focus Mode** - Hide completed tasks to concentrate on what matters
-- **Progress Tracking** - Visual progress bar showing completion percentage
-- **Responsive Design** - Works seamlessly on desktop, tablet, and mobile
-- **Local Persistence** - All data saved securely in browser localStorage
+- **Dark & Light Mode** – Beautiful themes with smooth transitions  
+- **Focus Mode** – Hide completed tasks to concentrate on what matters  
+- **Progress Tracking** – Visual progress bar showing completion percentage  
+- **Responsive Design** – Works seamlessly on desktop, tablet, and mobile  
+- **Local Persistence** – All data saved securely in browser `localStorage`  
 
 ### Accessibility
-- **Keyboard Navigation** - Full keyboard support with intuitive shortcuts
-- **Screen Reader Support** - ARIA labels and live announcements
-- **Focus Management** - Proper focus handling for modals and interactions
-- **Skip Links** - Quick navigation for keyboard users
+- **Keyboard Navigation** – Full keyboard support with intuitive shortcuts  
+- **Screen Reader Support** – ARIA labels and live announcements  
+- **Focus Management** – Proper focus handling for modals and interactions  
+- **Skip Links** – Quick navigation for keyboard users  
 
 ---
 
-## Keyboard Shortcuts
+## ⌨️ Keyboard Shortcuts
 
-| Shortcut | Action |
-|----------|--------|
-| `?` | Show keyboard shortcuts help |
-| `D` | Toggle dark/light mode |
-| `F` | Toggle focus mode |
-| `Ctrl+F` | Focus search input |
-| `Esc` | Clear search / Close modal |
-| `Arrow Keys` | Navigate task list |
-| `J` / `K` | Navigate down/up (Vim-style) |
-| `X` | Toggle task completion |
-| `E` | Edit selected task |
-| `Shift+Delete` | Delete selected task |
-
----
-
-## Tech Stack
-
-| Category | Technology |
-|----------|------------|
-| **Language** | TypeScript |
-| **Framework** | React 18 |
-| **Styling** | Tailwind CSS 3 |
-| **Drag & Drop** | @dnd-kit |
-| **Build Tool** | Create React App |
-| **Deployment** | GitHub Pages |
+| Shortcut        | Action                          |
+|-----------------|---------------------------------|
+| `?`             | Show keyboard shortcuts help     |
+| `D`             | Toggle dark/light mode          |
+| `F`             | Toggle focus mode               |
+| `Ctrl+F`        | Focus search input              |
+| `Esc`           | Clear search / Close modal      |
+| `Arrow Keys`    | Navigate task list              |
+| `J` / `K`       | Navigate down/up (Vim-style)    |
+| `X`             | Toggle task completion          |
+| `E`             | Edit selected task              |
+| `Shift+Delete`  | Delete selected task            |
 
 ---
 
-## Project Structure
+## 🛠 Tech Stack
+
+| Category         | Technology                     |
+|------------------|--------------------------------|
+| **Language**     | TypeScript                     |
+| **Framework**    | React 18                       |
+| **Styling**      | Tailwind CSS 3                 |
+| **Drag & Drop**  | [@dnd-kit](https://dndkit.com/)|
+| **Build Tool**   | Create React App               |
+| **Deployment**   | GitHub Pages                   |
+
+---
+
+## 📂 Project Structure
 
 ```
 src/
@@ -105,7 +107,7 @@ src/
 
 ---
 
-## Installation
+## 🚀 Installation
 
 ### Prerequisites
 - Node.js 16+ 
@@ -138,7 +140,7 @@ src/
 
 ---
 
-## Usage Guide
+## 📖 Usage Guide
 
 ### Creating Tasks
 1. Enter your task in the main input field
@@ -168,7 +170,7 @@ src/
 
 ---
 
-## Configuration
+## ⚙️ Configuration
 
 ### Tailwind Theme
 The color palette and theme can be customized in `tailwind.config.js`:
@@ -190,7 +192,7 @@ colors: {
 
 ---
 
-## Acknowledgements
+## 🙏 Acknowledgements
 
 - Built with [React](https://reactjs.org/)
 - Styled with [Tailwind CSS](https://tailwindcss.com/)
@@ -203,7 +205,7 @@ colors: {
 
 <div align="center">
 
-**TaskZen** - Your zen-like task manager
+**TaskZen** - Your zen-like task manager 🧘‍♂️
 
 [Live Demo](https://ABiR994.github.io/TaskZen)
 
