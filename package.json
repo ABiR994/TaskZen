@@ -2,6 +2,7 @@
   "name": "taskzen",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ABiR994.github.io/TaskZen",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -31,9 +32,9 @@
     ]
   },
   "devDependencies": {
-    "tailwindcss": "^3.4.1",
-    "postcss": "^8.4.35",
     "autoprefixer": "^10.4.17",
-    "react-scripts": "^5.0.1"
+    "postcss": "^8.4.35",
+    "react-scripts": "^5.0.1",
+    "tailwindcss": "^3.4.1"
   }
 }

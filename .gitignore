@@ -63,3 +63,5 @@ com.crashlytics.sdk.android.*
 .pnp.*
 .env.*
 .eslintcache
+
+DEPLOYMENT.md
