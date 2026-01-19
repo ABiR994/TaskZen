@@ -66,28 +66,5 @@ TaskZen provides a straightforward way to manage your tasks:
 
 ---
 
-## Deployment
-This project is automatically deployed to GitHub Pages using the `gh-pages` package.
-The deployment process is configured via `npm run deploy` script in `package.json`, which first builds the React application and then pushes the static assets from the `build` directory to the `gh-pages` branch.
-
----
-
-## Contributing
-Contributions are welcome! If you have suggestions for improving TaskZen, please feel free to:
-1.  Fork the repository.
-2.  Create a new branch (`git checkout -b feature/your-feature-name`).
-3.  Make your changes.
-4.  Commit your changes (`git commit -m 'feat: Add some feature'`).
-5.  Push to the branch (`git push origin feature/your-feature-name`).
-6.  Open a Pull Request.
-
----
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
 ## Acknowledgements
 This project was developed using Opencode.
-Special thanks to the open-source community for the tools and libraries that made this project possible.
