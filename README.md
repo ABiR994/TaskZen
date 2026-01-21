@@ -2,11 +2,11 @@
 
 # TaskZen: Focus-Driven Task Manager
 
-![TaskZen Logo](https://ABiR994.github.io/TaskZen/logo.svg)
+![TaskZen Logo](logo.svg)
 
 A modern, feature-rich task management application built with React and TypeScript.
 
-[Live Demo](https://ABiR994.github.io/TaskZen) | [Report Bug](https://github.com/ABiR994/TaskZen/issues) | [Request Feature](https://github.com/ABiR994/TaskZen/issues)
+[Live Demo](https://task-zen-topaz.vercel.app/) | [Report Bug](https://github.com/ABiR994/TaskZen/issues) | [Request Feature](https://github.com/ABiR994/TaskZen/issues)
 
 </div>
 
@@ -78,7 +78,7 @@ Whether you're tackling daily chores or managing complex projects, TaskZen adapt
 | **Styling**      | Tailwind CSS 3                 |
 | **Drag & Drop**  | [@dnd-kit](https://dndkit.com/)|
 | **Build Tool**   | Create React App               |
-| **Deployment**   | GitHub Pages                   |
+| **Deployment**   | Vercel                         |
 
 ---
 
@@ -213,6 +213,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **TaskZen** - Your zen-like task manager 🧘‍♂️
 
-[Live Demo](https://ABiR994.github.io/TaskZen)
+[Live Demo](https://task-zen-topaz.vercel.app/)
 
 </div>
