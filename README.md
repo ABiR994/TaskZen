@@ -167,7 +167,7 @@ TaskZen is made possible by the incredible open-source community and the followi
 - **[DND Kit](https://dndkit.com/)** – For the performant and accessible drag-and-drop primitives.
 - **[Heroicons](https://heroicons.com/)** – For the beautiful, consistent SVG iconography.
 - **[Inter Font](https://rsms.me/inter/)** – The primary typeface for high-readability UI.
-- **[Advanced Agentic Coding](https://deepmind.google/)** – Developed using Google DeepMind's agentic coding tools (Antigravity/OpenCode).
+- **[Antigravity / Opencode](https://opencode.ai/)** – Developed using Opencode and Antigravity.
 
 ---
 
