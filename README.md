@@ -2,8 +2,6 @@
 
 # TaskZen: Focus-Driven Task Manager
 
-<div align="center">
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-f1c40f.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![Deploy: Vercel](https://img.shields.io/badge/Deploy-Vercel-000000.svg?style=flat-square&logo=vercel)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FABiR994%2FTaskZen)
 [![React](https://img.shields.io/badge/React-18.2-61dafb.svg?style=flat-square&logo=react)](https://reactjs.org/)
