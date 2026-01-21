@@ -22,9 +22,18 @@
 
 ## 🌟 Overview
 
-**TaskZen** is a high-performance, productivity-first task manager designed to eliminate clutter and foster deep focus. Built with **React 18** and **TypeScript**, it combines a professional-grade feature set with a serene, glassmorphic interface that adapts to your workflow.
+**TaskZen** is a high-performance, productivity-first task manager designed to eliminate clutter and foster deep focus. Built with **React 18** and **TypeScript**, it combines a professional-grade feature set with a serene, minimalist interface that adapts to your workflow.
 
-Whether you're managing complex engineering projects or daily personal goals, TaskZen provides the tools you need—**subtasks, recurring logic, and accessibility-first design**—to stay organized without the cognitive load of traditional managers.
+---
+
+## 🧘 Why TaskZen?
+
+Traditional task managers often contribute to cognitive overload with cluttered interfaces and unnecessary complexity. **TaskZen** is built on the philosophy of "Zen Productivity"—providing powerful tools through a clean, distraction-free environment.
+
+- **Deep Work Oriented:** Focus Mode silences the noise so you can finish what you started.
+- **Developer Friendly:** Intuitive keyboard shortcuts and Vim-style navigation.
+- **Privacy First:** Your data stays in your browser. No accounts, no tracking.
+- **Built for Scale:** Manage everything from simple list items to complex nested projects.
 
 ---
 
@@ -158,7 +167,7 @@ TaskZen is made possible by the incredible open-source community and the followi
 - **[DND Kit](https://dndkit.com/)** – For the performant and accessible drag-and-drop primitives.
 - **[Heroicons](https://heroicons.com/)** – For the beautiful, consistent SVG iconography.
 - **[Inter Font](https://rsms.me/inter/)** – The primary typeface for high-readability UI.
-- **[OpenCode](https://opencode.ai/)** – Developed using OpenCode.
+- **[Advanced Agentic Coding](https://deepmind.google/)** – Developed using Google DeepMind's agentic coding tools (Antigravity/OpenCode).
 
 ---
 
