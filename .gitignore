@@ -2,6 +2,7 @@
 node_modules/
 /build
 /dist
+/out
 .npm
 npm-debug.log*
 yarn-debug.log*
@@ -12,29 +13,24 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
-
-# dependencies
-/node_modules
+.env*.local
 
 # testing
 /coverage
-
-# production
-/build
 
 # misc
 .DS_Store
 *.log
 *.tgz
+*.tsbuildinfo
 
 # editor directories and files
-.idea
-.vscode
+.idea/
+.vscode/
 *.sublime-project
 *.sublime-workspace
 
 # macOS
-.DS_Store
 .AppleDouble
 .LSOverride
 
@@ -45,23 +41,25 @@ yarn-error.log*
 *.bak
 *.swo
 *.tmp
+*.bak
 temp/
 .tmp/
 
 # Crashlytics
 com.crashlytics.sdk.android.*
 
-# Optional: React Native (if applicable, though this is a web app)
-.react-native/local-cli/core/tmp
+# React Native
+.react-native/
 .packager/
 
-# Misc
+# Yarn
 .yarn/cache
 .yarn/build-state.yml
 .yarn/install-state.yml
 .yarn/unplugged
 .pnp.*
-.env.*
-.eslintcache
 
+# Other
+.eslintcache
 DEPLOYMENT.md
+
