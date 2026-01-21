@@ -170,7 +170,7 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 
 <div align="center">
 
-**TaskZen** – Built for focus. Designed for you.
+**TaskZen** - Your zen-like task manager 🧘‍♂️
 
 [Back to Top](#taskzen-focus-driven-task-manager)
 
