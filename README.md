@@ -2,7 +2,7 @@
 
 # TaskZen: Focus-Driven Task Manager
 
-![TaskZen Logo](logo.svg)
+![TaskZen Logo](/public/logo.svg)
 
 A modern, feature-rich task management application built with React and TypeScript.
 
