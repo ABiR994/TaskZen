@@ -2,7 +2,12 @@
 
 # TaskZen: Focus-Driven Task Manager
 
-![TaskZen Logo](/public/logo.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FABiR994%2FTaskZen)
+[![React](https://img.shields.io/badge/React-18-blue.svg)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue.svg)](https://www.typescriptlang.org/)
+
+![TaskZen Logo](public/logo.svg)
 
 A modern, feature-rich task management application built with React and TypeScript.
 
